@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/images/card/CherryBomb.bmp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/card/CherryBomb.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/card/CherryBombG.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/card/Peashooter.bmp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/card/Peashooter.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/card/PeashooterG.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/card/SunFlower.bmp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/card/SunFlower.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/card/SunFlowerG.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/interface/SodRoll.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/interface/SodRollCap.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/interface/background1unsodded.jpg" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/interface/sod1row.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/interface/sod3row.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/menu/Help.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/menu/OptionsBackButton32.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/menu/OptionsBackButton8.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/menu/OptionsMenuback32.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/menu/OptionsMenuback8.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/menu/SelectorScreenStartAdventur.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/menu/SelectorScreenSurvival.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/images/menu/Surface.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/js/lib/simpleInheritance.js" charset="GBK" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,349 @@
+/*起始页面*/
+.openscene {
+    width: 900px;
+    height: 600px;
+    background: url("../images/openscene/Logo.jpg") no-repeat;
+    /*置顶*/
+    position: absolute;
+    z-index: 1;
+    margin-top: 3px;
+}
+
+.gomenu {
+    position: absolute;
+    font-size: 15pt;
+    width: 321px;
+    height: 69px;
+    font-family: 黑体;
+    line-height: 69px;
+    left: 60px;
+    bottom: 10px;
+    cursor: pointer;
+    background: url("../images/openscene/LogoLine.png") no-repeat center -5px;
+    text-align: center;
+}
+
+/*菜单界面*/
+.menu {
+    position: absolute;
+    width: 900px;
+    height: 600px;
+    overflow: hidden;
+    border: 3px outset;
+    display: none;
+    z-index: 255;
+}
+
+.startAdventure {
+    position: absolute;
+    background: url("../images/menu/SelectorScreenStartAdventur.png") center top;
+    left: 474px;
+    top: 80px;
+    width: 331px;
+    height: 146px;
+    cursor: pointer;
+}
+
+.startAdventure:hover {
+    background: url("../images/menu/SelectorScreenStartAdventur.png") center bottom;
+
+}
+
+.playOtherGame {
+    position: absolute;
+    background: url("../images/menu/SelectorScreenSurvival.png") center top;
+    left: 474px;
+    top: 203px;
+    width: 313px;
+    height: 131px;
+    cursor: pointer;
+}
+
+.playOtherGame:hover {
+    background: url("../images/menu/SelectorScreenSurvival.png") center bottom;
+
+}
+
+/*map中的 选择 帮助 退出*/
+.menuBg map {
+    display: inline;
+}
+
+.menuBg area {
+    cursor: pointer;
+    display: inline;
+}
+
+/*各式弹出的窗口*/
+.menuWindows .option,
+.menuWindows .selectLevel,
+.menuWindows .selectGame {
+    position: absolute;
+    text-align: center;
+    left: 244px;
+    top: 60px;
+    width: 412px;
+    height: 483px;
+    display: none;
+    background: url("../images/menu/OptionsMenuback32.png");
+}
+
+.menuWindows .option {
+    z-index: 999;
+}
+
+.backMenu {
+    background: url("../images/menu/OptionsBackButton32.png");
+    /*float: left;*/
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    line-height: 94px;
+    font-family: 黑体;
+    font-size: 32px;
+    cursor: pointer;
+    width: 360px;
+    height: 100px;
+    margin-left: 26px;
+    display: inline;
+    color: #FC6;
+
+}
+
+.menuWindows .help {
+    width: 614px;
+    height: 399px;
+    background: url("../images/menu/Help.png");
+    position: absolute;
+    display: none;
+    left: 143px;
+    top: 100px;
+}
+
+/*关卡设置*/
+.level {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+}
+
+.level h3 {
+    color: #FC6;
+    font-size: 20px;
+    width: 100%;
+    height: 20px;
+}
+
+.level .smalllevel {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 30px;
+    cursor: pointer;
+
+}
+
+/*游戏主界面*/
+.mainScene {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 900px;
+    height: 600px;
+    overflow: hidden;
+    background-color: #000;
+    border: 3px solid #666;
+}
+
+/*背景图片*/
+.mainScene .ground {
+    position: absolute;
+    width: 1400px;
+    height: 600px;
+    display: -webkit-box;
+    z-index: 0;
+    left: 0px;
+}
+
+/*草地图片*/
+.mainScene .grass {
+    width: 770px;
+    position: absolute;
+    clip: rect(0px 0px 330px 0px);
+    animation: run 2s linear forwards;
+}
+
+@-webkit-keyframes run {
+    100% {
+        clip: rect(0px 770px 330px 0px);
+    }
+
+}
+
+/*滚动的草地*/
+.mainScene .sodRoll {
+    position: absolute;
+    width: 68px;
+    height: 141px;
+    left: 131px;
+    animation: scroll 2s linear forwards;
+
+}
+
+@-webkit-keyframes scroll {
+    100% {
+        width: 0;
+        left: 900px;
+    }
+
+}
+
+/*草卷*/
+.mainScene .sodRollCap {
+    width: 68px;
+    height: 68px;
+    left: 131px;
+    position: absolute;
+    animation: scrollCap 2s linear forwards;
+
+}
+
+@-webkit-keyframes scrollCap {
+    100% {
+        width: 15px;
+        height: 15px;
+        left: 900px;
+
+    }
+
+}
+
+/*卡片列表*/
+.mainScene .cardList {
+    visibility: visible;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    width: 100px;
+    overflow: visible;
+    z-index: 254;
+}
+
+.mainScene .cardList div {
+    position: relative;
+}
+
+.cardList .needNum {
+    cursor: pointer;
+    position: absolute;
+    left: 66px;
+    top: 40px;
+    width: 34px;
+    height: 20px;
+    font-family: Fixedsys;
+    font-size: 11pt;
+}
+
+/*显示僵尸*/
+.mainScene .monster {
+    position: absolute;
+    width: 335px;
+    height: 600px;
+    left: 565px;
+    top: 0;
+    z-index: 1;
+}
+
+.monster .theMonster {
+    position: absolute;
+}
+
+/*// 出场的怪兽*/
+.appearMonster {
+    position: absolute;
+    z-index: 1;
+
+}
+
+/*选择卡片*/
+.cardSelect img {
+    position: absolute;
+    z-index: 255;
+}
+
+/*植物*/
+.plants img {
+    position: absolute;
+    z-index: 255;
+}
+
+/*阳光*/
+.tool {
+    position: absolute;
+    left: 105px;
+    top: 0px;
+    height: 35px;
+    width: 123px;
+    display: none;
+    z-index: 1;
+}
+
+/*阳光*/
+.tool .sunUi {
+    background: url('../images/interface/SunBack.png') no-repeat;
+    position: absolute;
+    width: 123px;
+    height: 35px;
+}
+
+.sunUi .sunNum {
+    text-align: center;
+    position: absolute;
+    top: 4px;
+    left: 43px;
+    width: 68px;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 18pt;
+}
+
+/*生成的阳光*/
+.theSun {
+    position: absolute;
+    cursor: pointer;
+    z-index: 256;
+    opacity: 0.8;
+    width: 78px;
+    height: 78px;
+}
+
+/*游戏上方菜单*/
+.topMenu {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    width: 226px;
+    height: 41px;
+    left: 677px;
+    z-index: 254;
+}
+
+.topMenu .tMenu {
+    float: left;
+    text-align: center;
+    line-height: 41px;
+    font-weight: bold;
+    font-family: 黑体;
+    color: #00CB08;
+    height: 41px;
+    width: 113px;
+    background: url("../images/interface/Button.png");
+}
+
+/*生成的子弹*/
+.pea {
+    position: absolute;
+    z-index: 2;
+    /*width: 56px;*/
+    /*height: 34px;*/
+}
+

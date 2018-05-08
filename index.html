@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>植物大战僵尸</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+</head>
+<body>
+<!--音效-->
+<audio id="Faster" src="music/Faster.mp3" autoplay loop></audio>
+<audio id="UraniwaNi" src="music/UraniwaNi.mp3" loop></audio>
+<audio id="LookUpAtTheSky" src="music/LookUpAtTheSky.mp3" loop></audio>
+<audio id="UltimateBattle" src="music/UltimateBattle.mp3" loop></audio>
+
+<!--开场界面-->
+<div class="openscene">
+    <div class="gomenu" onclick="game.changScene.goMenu()">点击进入游戏</div>
+</div>
+
+<!--菜单界面-->
+<div class="menu">
+    <!--背景上的按钮-->
+    <div class="menuBg">
+        <img src="images/menu/surface.png" alt="surface" usemap="#FPMap0"/>
+
+        <div class="startAdventure" onclick="game.changScene.showLevel()"></div>
+        <div class="playOtherGame" onclick="game.changScene.showGame()"></div>
+
+        <!--选项 帮助 退出-->
+        <!--关于map标签 一定要有name属性  在相应图片上加上usemap=“map的name”
+            shape 形状    coords
+            rect正方形     形状正方形是左上以及右下的坐标
+            circle圆形     圆心坐标及半径
+            poly多边形     所有顶点的坐标
+        -->
+        <map name="FPMap0">
+            <area href="javascript:void(0)" shape="rect" coords="641, 466, 724, 527"
+                  onclick="game.changScene.showOption()">
+            <area href="javascript:void(0)" shape="rect" coords="718, 512, 790, 558"
+                  onclick="game.changScene.showHelp()">
+            <area href="javascript:void(0)" shape="rect" coords="800, 495, 879, 548"
+                  onclick="game.changScene.SetNone($('.menu'))">
+        </map>
+    </div>
+    <!--弹出框-->
+    <div class="menuWindows">
+        <div class="option">
+            <div class="backMenu" onclick="game.changScene.SetNone($('.option'))">返回游戏</div>
+        </div>
+        <div class="help" onclick="game.changScene.SetNone($('.help'))"></div>
+        <div class="selectLevel">
+            <div class="level">
+                <h3>选择关卡</h3>
+
+                <div class="smalllevel">第一关</div>
+                <div class="smalllevel">第二关</div>
+                <div class="smalllevel">第三关</div>
+            </div>
+            <div class="backMenu" onclick="game.changScene.SetNone($('.selectLevel'))">返回游戏</div>
+
+        </div>
+        <div class="selectGame">
+            <div class="backMenu" onclick="game.changScene.SetNone($('.selectGame'))">返回游戏</div>
+        </div>
+    </div>
+</div>
+
+<!--游戏主界面-->
+<div class="mainScene" id="map">
+    <!--背景图片-->
+    <div class="ground"></div>
+    <!--左边卡片列-->
+    <div class="cardList" id="cardList"></div>
+    <!--出场僵尸显示-->
+    <div class="monster"></div>
+
+    <!--卡片选择-->
+    <div class="cardSelect"></div>
+    <!--出场植物-->
+    <div class="plants"></div>
+    <!--阳光-->
+    <div class="tool">
+        <div class="sunUi">
+            <span class="sunNum"></span>
+        </div>
+    </div>
+
+    <!--菜单-->
+    <div class="topMenu">
+        <div class="tMenu">暂 停</div>
+        <div class="tMenu">菜 单</div>
+    </div>
+</div>
+
+<!--工具包-->
+<script src="js/lib/jquery-1.12.4.js"></script>
+<script src="js/lib/simpleInheritance.js"></script>
+<!--引入类-->
+<script src="js/ChangeScene.js"></script>
+<script src="js/Game.js"></script>
+<script src="js/resouce/setMonster.js"></script>
+<script src="js/resouce/SetJson.js"></script>
+<script src="js/Background.js"></script>
+<script src="js/Sun.js"></script>
+<script src="js/Card.js"></script>
+<script src="js/Monster.js"></script>
+<script src="js/SunFlower.js"></script>
+<script src="js/Peashooter.js"></script>
+
+
+<script>
+    var game = new Game({});
+</script>
+</body>
+</html>
